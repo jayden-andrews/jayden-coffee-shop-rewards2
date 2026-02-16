@@ -35,23 +35,30 @@ public class Purchase {
                 case 1:
                     itemConfirmation(patron, item1);
                     receipt.append(item1Display);
+                    break;
                 case 2:
                     itemConfirmation(patron, item2);
                     receipt.append(item2Display);
+                    break;
                 case 3:
                     itemConfirmation(patron, item3);
                     receipt.append(item3Display);
+                    break;
                 case 4:
                     itemConfirmation(patron, item4);
                     receipt.append(item4Display);
+                    break;
                 case 5:
                     itemConfirmation(patron, item5);
                     receipt.append(item5Display);
+                    break;
                 case 6:
                     itemConfirmation(patron, item6);
                     receipt.append(item6Display);
+                    break;
                 case 7:
                     System.out.println("Would you like to redeem rewards? (y/n)");
+                    break;
             }
         } while (input != 7);
     }

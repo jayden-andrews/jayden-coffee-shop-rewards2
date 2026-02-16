@@ -5,10 +5,11 @@ public class Item {
     private double price;
     private boolean isDrink;
     private int points;
-    public Item(String name, double price, boolean isDrink) {
+    public Item(String name, double price, boolean isDrink, int points) {
         this.name = name;
         this.price = price;
         this.isDrink = isDrink;
+        this.points = points;
     }
 
     public String getName() {
