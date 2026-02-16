@@ -61,6 +61,7 @@ public class Purchase {
                     break;
             }
         } while (input != 7);
+        System.out.println(receipt);
     }
 
     public static void itemConfirmation(Customer patron, Item item) {
