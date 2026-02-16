@@ -34,7 +34,7 @@ public class Purchase {
             switch (input) {
                 case 1:
                     itemConfirmation(patron, item1);
-                    receipt.append(item1Display);
+                    receipt.append(item1Display).append("\n");
                     break;
                 case 2:
                     itemConfirmation(patron, item2);
