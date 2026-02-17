@@ -5,6 +5,7 @@ public class Customer {
     private String email;
     private int drinksPurchased;
     private boolean rewardActive;
+    private double tab;
 
     public Customer(String name, String email) {
         this.name = name;
@@ -56,5 +57,13 @@ public class Customer {
         } else {
             return false;
         }
+    }
+
+    public double getTab() {
+        return tab;
+    }
+
+    public void setTab(double tab) {
+        this.tab += tab;
     }
 }
