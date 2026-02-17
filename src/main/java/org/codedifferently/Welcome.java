@@ -3,12 +3,11 @@ import java.util.Scanner;
 
 public class Welcome {
     public static Customer greet(Scanner sc) {
-        System.out.println("Welcome to Coffee. Code. Consistency!");
-        System.out.println("Patrons must signup for our rewards program to shop and become eligible for rewards!\n");
-        System.out.print("Enter your name: ");
+        System.out.println("Welcome to Triple Cs!");
+        System.out.print("Can I get a name for the order?: ");
         String name = sc.nextLine();
-        System.out.print("Enter your phone number: ");
-        String phoneNumber = sc.nextLine();
-        return new Customer(name, phoneNumber);
+        System.out.print("And your email address?: ");
+        String email = sc.nextLine();
+        return new Customer(name, email);
     }
 }

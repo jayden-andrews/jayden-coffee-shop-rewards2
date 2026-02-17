@@ -2,51 +2,59 @@ package org.codedifferently;
 
 public class Customer {
     private String name;
-    private String phoneNumber;
-    private double tab;
-    private int points;
+    private String email;
+    private int drinksPurchased;
+    private boolean rewardActive;
 
-    public Customer() {
-        this.name = "John Doe";
-        this.phoneNumber = "000-000-0000";
-        this.points = 0;
-    }
-
-    public Customer(String name, String phoneNumber) {
+    public Customer(String name, String email) {
         this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.points = 0;
+        this.email = email;
+        this.drinksPurchased = 0;
+        this.rewardActive = false;
     }
 
     public String getName() {
         return name;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setDrinksPurchased() {
+        this.drinksPurchased++;
     }
 
-    public int getPoints() {
-        return points;
+    public void setDrinksPurchased(int num) {
+        this.drinksPurchased = 0;
     }
 
-    public void setPoints(int points) {
-        this.points = points;
+    public boolean getRewardActive() {
+        return this.rewardActive;
     }
 
-    public double getTab() {
-        return tab;
+    public int getDrinksPurchased() {
+        return this.drinksPurchased;
     }
 
-    public void setTab(double tab) {
-        this.tab = tab;
+    public void setRewardActive(boolean status) {
+        this.rewardActive = status;
+    }
+
+    public boolean isEligible() {
+        if (this.drinksPurchased == 4) {
+            setRewardActive(true);
+            return true;
+        } else {
+            return false;
+        }
     }
 }
