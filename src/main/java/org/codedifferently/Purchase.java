@@ -36,6 +36,8 @@ public class Purchase {
                 case 4:
                     System.out.println("Thank you for shopping at Triple C's");
                     break;
+                default:
+                    System.out.println("\nI'm sorry, we don't carry that drink.\n");
             }
         } while (input != 4);
     }
