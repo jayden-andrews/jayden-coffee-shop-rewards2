@@ -6,6 +6,7 @@ public class Welcome {
         System.out.println("Welcome to Triple Cs!");
         String name, email;
 
+        // Prompts the user for a valid name for the order. Will launch an error if it is invalid.
         while (true) {
             System.out.print("Can I get a name for the order?: ");
             name = sc.nextLine();
@@ -19,6 +20,7 @@ public class Welcome {
             }
         }
 
+        // Prompts the user for a valid email address for the order. Will launch an error if it is invalid.
         while (true) {
             System.out.print("And your email address?: ");
             email = sc.nextLine();
@@ -34,6 +36,7 @@ public class Welcome {
 
         System.out.println("\nThanks! Reminder that you get a free drink for every 5 drinks that you buy! :)");
 
+        // Returns an object representing the current customer.
         return new Customer(name, email);
     }
 }
