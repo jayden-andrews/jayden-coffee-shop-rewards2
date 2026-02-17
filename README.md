@@ -1,147 +1,52 @@
 # coffee-shop-rewards2
 
-# Coreye’s Coffee Cafe (Triple C’s)
+Triple C's
 
-### “Coffee. Code. Consistency.”
+## Objective
 
-Welcome to Triple C’s.
+Build a Java console application that manages a coffee shop’s menu and a customer loyalty program. You will practice **Object-Oriented Programming (OOP)** by creating custom classes, managing data with loops, and using logic to award free drinks.
 
-We serve:
+## Core Requirements
 
-* Strong coffee
-* Clean code
-* Clear logic
+### 1. The `CoffeeItem` Class
 
-You’ve been hired to build the rewards system.
+This class represents a drink on the menu.
 
-Don’t let the Bronze-tier customers finesse free drinks.
+* **Attributes:** Name and price.
+* **Encapsulation:** Use `private` fields with **Getters and Setters**.
+* **Constructor:** Initialize the name and price when a new drink is created.
 
----
+### 2. The `Customer` Class
 
-## The Mission
+This class tracks individual shoppers and their progress toward a reward.
 
-Customers:
+* **Attributes:** Name, email, and `drinksPurchased` (an integer).
+* **Methods:** * Create a method to increment the drink count.
+* Create a method to check if the customer is eligible for a **Reward** (e.g., if they have bought 5 drinks, the next one is free).
 
-* Order items
-* Earn points
-* Unlock tiers
-* Try to redeem rewards
 
-You:
 
-* Build the system
-* Keep it organized
-* Make sure the math is correct
+### 3. The Shop Logic (`Main.java`)
 
-No arrays.
-No lists.
-Just solid fundamentals.
+This is where your program runs. You should:
+
+* **Instantiate Objects:** Create at least three different `CoffeeItem` objects.
+* **Control Flow:** Use an `if-else` statement to determine if a customer pays full price or $0 based on their reward status.
+* **Loops:** Use a `while` or `for` loop to simulate a "Daily Sales" cycle, allowing multiple customers to buy drinks until the shop closes.
 
 ---
 
-## 📁 Required Files
+## The Challenge
 
-```
-Customer.java
-Purchase.java
-Main.java
-```
+1. **The "Golden Ticket":** Add logic so that if a customer spends over $20 in a single transaction, they get a "bonus" point toward their rewards.
+2. **Input Validation:** Use a `Scanner` to take user input. Ensure the program doesn't crash if someone enters a negative number or an invalid menu selection.
 
----
+## Example Output
 
-# Level 1 — “Open the Shop”
-
-Create a `Customer`.
-
-Fields:
-
-* name
-* phoneNumber
-* points
-
-Include:
-
-* Default constructor
-* Parameterized constructor
-* Getters and setters
-
-Create multiple customers.
-Let them earn points.
-Print their totals.
-
-Nobody starts Gold at Triple C’s.
-
----
-
-# Level 2 — “Run the Register”
-
-Create a `Purchase` class.
-
-Each item must know:
-
-* itemName
-* price
-* isDrink
-
-Create at least **6 menu items**.
-
-No arrays.
-Just individual object variables.
-
----
-
-## ☕ Ordering System
-
-
-The menu must:
-
-* Display at least once
-* Allow customers to choose items
-* Determine how points are chosen
-
-Update the customer’s points correctly.
-
----
-
-# Level 3 — “Status Matters”
-
-Customers unlock tiers:
-
-* Bronze
-* Silver
-* Gold
-
-Add redemption:
-
-Free Drink = 100 points
-
-If they don’t have enough → deny
-If they do → subtract points
-
-At the end, print:
-
-Name | Tier | Points
-
-Clean. Clear. Professional.
-
----
-
-# Level 4 — “Make It Feel Like a Real Checkout”
-
-Triple C’s runs smooth.
-
-While the customer is ordering:
-
-* Track their **session total spent**
-* Print each item as it’s ordered (like a receipt)
-
-When they finish ordering, print:
-
-* Session total
-* Points earned during this session
-* Updated total customer points
-
-Make it feel like a real checkout screen.
-
+```text
+Welcome to Triple Cs!
+Customer: Alex | Drinks toward reward: 4
+Alex purchased a Latte ($4.50).
+CONGRATS! Reward reached. Next drink is on us!
 
 
