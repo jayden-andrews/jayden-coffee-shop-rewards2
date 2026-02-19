@@ -16,7 +16,7 @@ public class Purchase {
         // Object that we will use to build the menu.
         StringBuilder receipt = new StringBuilder("\nReceipt\n");
 
-        System.out.println("\nAnd what can I get for you today?\n");
+        System.out.println("\nAnd what can I get for you today? (Select a number)\n");
 
         // Loop to keep displaying the menu while the customer chooses not to checkout.
         do {
@@ -83,7 +83,7 @@ public class Purchase {
         if (tab > 20.00) {
             System.out.println("Congratulations! You've earned a voucher that can be redeemed for any drink at during your next visit!");
         }
-        System.out.println("Thank you for shopping at Triple C's");
+        System.out.println("Thank you for shopping at Triple C's!");
     }
 
     // A method that processes a transaction.
